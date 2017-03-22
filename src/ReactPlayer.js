@@ -89,6 +89,7 @@ export default class ReactPlayer extends Component {
     const props = active ? { ...activeProps, ref: this.ref } : {}
     return (
       <Player
+        crossorigin="anonymous"
         key={Player.displayName}
         youtubeConfig={youtubeConfig}
         soundcloudConfig={soundcloudConfig}
